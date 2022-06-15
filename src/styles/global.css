@@ -1,0 +1,58 @@
+:root {
+	--fg: black;
+	--bg: white;
+}
+
+html { scroll-behavior: smooth; }
+
+body { 
+	margin: 0;
+	background-color: var(--bg);
+	color: var(--fg);
+	font-family: "Recursive";
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { 
+	background: var(--fg);
+}
+
+/** Optional configurable css class names */
+
+.flex { display: flex; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.strong { font-weight: bold; }
+.m-0 { margin: 0; }
+
+.transition {
+	transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+}
+
+.shadow {
+	-webkit-box-shadow: 0px 5px 15px -8px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 5px 15px -8px rgba(0,0,0,0.5);
+	box-shadow: 0px 5px 15px -8px rgba(0,0,0,0.5);
+}
+
+.text-shadow {
+	-webkit-text-shadow: 4px 4px 5px rgb(0, 0, 0, 0.5);
+	-moz-text-shadow: 4px 4px 5px rgb(0, 0, 0, 0.5);
+	text-shadow: 4px 4px 5px rgb(0, 0, 0, 0.5);
+}
+
+.label {
+	color: #000;
+	font-family: sans-serif;
+	background: transparent;
+	margin: 0;
+	z-index: 1!important;
+}
+
+.label:not(.strong) {
+	font-size: 10px;
+}

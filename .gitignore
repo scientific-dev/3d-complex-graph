@@ -1,0 +1,9 @@
+/node_modules/
+package-lock.json
+global.css.pretty
+/public/build/
+.DS_Store
+/inner/elements.json
+tests/
+old_files/
+test.js
